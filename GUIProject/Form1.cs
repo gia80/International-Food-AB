@@ -17,16 +17,17 @@ namespace GUIProject
 
         private List<Recipe> recipes;
         private Serializer serializer;
+
         public string FilePath {get; set;}
         public Form1()
         {
             InitializeComponent();
-
+             
             FilePath =  Environment.CurrentDirectory + @"\Databas.xml";
             serializer = new Serializer(FilePath);
             recipes = serializer.DeserializeRecipes();
-
-
+             
+            comBox.DataSource = Enum.GetValues(typeof(Product));
 
         }
 
@@ -38,15 +39,6 @@ namespace GUIProject
         private void Form1_Load(object sender, EventArgs e)
         {
             
-        }
-
-        private void btNew_Click(object sender, EventArgs e)
-        {
-           string newrecipe = new recipe();
-
-
-
-
         }
     }
 }

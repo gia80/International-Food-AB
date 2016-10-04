@@ -19,13 +19,13 @@ namespace ConsoleApplication1
 
             Recipe re = new Recipe();
             re.Description = "Laga si elle så";
-            re.Namerecipe = "Min Lasange";
+            re.Title = "Min Lasange";
             re.Product = Product.dessert;
 
 
             Recipe re2 = new Recipe();
             re2.Description = "En annan beskrivning";
-            re2.Namerecipe = "Min pizza";
+            re2.Title = "Min pizza";
             re2.Product = Product.fish;
 
 
