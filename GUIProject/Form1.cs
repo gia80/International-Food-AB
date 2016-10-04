@@ -40,7 +40,7 @@ namespace GUIProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach (var item in Enum.GetValues(typeof()))
+            foreach (var item in Enum.GetValues(typeof(Product)))
             {
                 comBox.Items.Add(item.ToString());
             }
@@ -70,7 +70,17 @@ namespace GUIProject
         private void listRecept_SelectedIndexChanged(object sender, EventArgs e)
         {
             Recipe r = (Recipe)listRecept.SelectedItem;
-            
+             
+        }
+
+        private void UpdateTextBox(Recipe r)
+        {
+            txtRecept.Text = r.Title;
+            txtRecept.Text = "\n";
+            txtRecept.Text = r.Product.ToString();
+            txtRecept.Text = "\n";
+            txtRecept.Text = r.Description;
+
 
         }
 
