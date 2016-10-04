@@ -43,7 +43,8 @@ namespace GUIProject
             //    comBox.Items.Add(item.ToString());
             //}
         }
-         
+
+        #region Gias Code
         /// <summary>
         /// 
         /// </summary>
@@ -61,16 +62,21 @@ namespace GUIProject
                     listRecept.Items.Add(r);
                 }
 
-            } 
+            }
 
         }
 
         private void listRecept_SelectedIndexChanged(object sender, EventArgs e)
         {
             Recipe r = (Recipe)listRecept.SelectedItem;
-             
+
         }
 
+
+
+        #endregion
+
+        #region Shahin Code
         private void UpdateTextBox(Recipe r)
         {
             txtRecept.Text = r.Title;
@@ -81,6 +87,14 @@ namespace GUIProject
 
 
         }
+
+        private Recipe ReadFromTextBox()
+        {
+
+
+            return null;
+        } 
+        #endregion
 
 
 
