@@ -28,8 +28,7 @@ namespace GUIProject
             recipes = serializer.DeserializeRecipes();
 
 
-            //Enum binding
-            comBox.DataSource = Enum.GetValues(typeof(Product));
+            
 
         }
 
