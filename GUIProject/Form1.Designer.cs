@@ -98,6 +98,7 @@
             this.comBox.Name = "comBox";
             this.comBox.Size = new System.Drawing.Size(176, 24);
             this.comBox.TabIndex = 39;
+            this.comBox.SelectedIndexChanged += new System.EventHandler(this.comBox_SelectedIndexChanged);
             // 
             // txtRecept
             // 
@@ -169,6 +170,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
