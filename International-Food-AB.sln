@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeProject", "RecipeProj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIProject", "GUIProject\GUIProject.csproj", "{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E2F9B846-D63B-4128-AB6E-55008335FC8F}"
+	ProjectSection(SolutionItems) = preProject
+		GUIProject\bin\Debug\Databas.xml = GUIProject\bin\Debug\Databas.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

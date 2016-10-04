@@ -20,7 +20,15 @@ namespace RecipeProject
             public Product Product { get; set; }
     }
 
-    
+
+    //Recipe sök = new Recipe();
+
+    //List<Recipe> resultat = Product.Where(a => a.Rubrik.ToLower().Contains(textBox1.Text)).ToList();
+    //        //Loopar
+    //        foreach ( Product food in resultat)
+    //        {
+    //                textBox1.Items.Add(Produt);
+    //        }
 }
 
 
