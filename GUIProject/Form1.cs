@@ -39,5 +39,14 @@ namespace GUIProject
         {
             
         }
+
+        private void btNew_Click(object sender, EventArgs e)
+        {
+           string newrecipe = new recipe();
+
+
+
+
+        }
     }
 }
