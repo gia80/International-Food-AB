@@ -1,4 +1,5 @@
-﻿using RecipeProject;
+﻿using InputOuputClass;
+using RecipeProject;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +16,18 @@ namespace GUIProject
     {
 
         private List<Recipe> recipes;
-
+        private Serializer serializer;
+        public string FilePath {get; set;}
         public Form1()
         {
             InitializeComponent();
+
+            FilePath =  Environment.CurrentDirectory + @"\Databas.xml";
+            serializer = new Serializer(FilePath);
+            recipes = serializer.DeserializeRecipes();
+
+
+
         }
 
         private void comBox_SelectedIndexChanged(object sender, EventArgs e)
