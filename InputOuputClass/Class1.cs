@@ -24,7 +24,7 @@ namespace InputOuputClass
                 {
                     foreach (Recipe p in recipe)
                     {
-                        w.WriteLine("Firstname: " + p.Firstname, Encoding.Unicode);        
+                        //w.WriteLine("Firstname: " + p.Firstname, Encoding.Unicode);        
                         w.WriteLine("------------------------------------");
                     }
                 }
