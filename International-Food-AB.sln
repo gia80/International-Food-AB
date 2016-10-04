@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOuputProject", "InputO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeProject", "RecipeProject\RecipeProject.csproj", "{984A6193-73C5-42A1-B1D5-2345A548C5C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GruppUpggift", "..\..\..\Documents\Visual Studio 2015\Projects\GruppUpggift\GruppUpggift\GruppUpggift.csproj", "{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIProject", "GUIProject\GUIProject.csproj", "{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{984A6193-73C5-42A1-B1D5-2345A548C5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{984A6193-73C5-42A1-B1D5-2345A548C5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{984A6193-73C5-42A1-B1D5-2345A548C5C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU

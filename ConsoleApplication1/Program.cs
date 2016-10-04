@@ -23,8 +23,15 @@ namespace ConsoleApplication1
             re.Product = Product.dessert;
 
 
+            Recipe re2 = new Recipe();
+            re2.Description = "En annan beskrivning";
+            re2.Namerecipe = "Min pizza";
+            re2.Product = Product.fish;
+
+
             List<Recipe> list = new List<Recipe>();
             list.Add(re);
+            list.Add(re2);
 
 
             cl.SerializeRecipes(list);
