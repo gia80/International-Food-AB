@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{54038B86-ECCC-4455-B020-9447235B8ECE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestApplication", "ConsoleApplication1\ConsoleTestApplication.csproj", "{54038B86-ECCC-4455-B020-9447235B8ECE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOuputClass", "InputOuputClass\InputOuputClass.csproj", "{684549B2-D351-47AA-A4EE-41A9E39F9A55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOuputProject", "InputOuputClass\InputOuputProject.csproj", "{684549B2-D351-47AA-A4EE-41A9E39F9A55}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeProject", "RecipeProject\RecipeProject.csproj", "{984A6193-73C5-42A1-B1D5-2345A548C5C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GruppUpggift", "..\..\..\Documents\Visual Studio 2015\Projects\GruppUpggift\GruppUpggift\GruppUpggift.csproj", "{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIProject", "GUIProject\GUIProject.csproj", "{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAF8FFEA-E4D0-43CE-84EE-34E10E2CF25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2F4E89-0E74-4912-A9FC-6B79322B5A2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
