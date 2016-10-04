@@ -24,7 +24,7 @@ namespace InputOuputClass
                 {
                     foreach (Recipe p in recipe)
                     {
-                        w.WriteLine("Firstname: " + p.Firstname, Encoding.Unicode); //Hallååååååå      
+                        w.WriteLine("Firstname: " + p.Firstname, Encoding.Unicode);        
                         w.WriteLine("------------------------------------");
                     }
                 }
@@ -35,7 +35,7 @@ namespace InputOuputClass
             }
         }
 
-        private Recipe ReadProductFromFile()
+        private void ReadProductFromFile()
         {
             try
             {
@@ -43,16 +43,16 @@ namespace InputOuputClass
                 {
                     for (int i = 0; !r.EndOfStream; i++)
                     {
-                        Product p = new Product();
+                        Recipe p = new Recipe();
 
                         string text = r.ReadLine();
-                        p.Firstname = text.Substring(text.IndexOf(":") + 1).Trim();
+                        //p.Firstname = text.Substring(text.IndexOf(":") + 1).Trim();
                         text = r.ReadLine();
                 
 
                         r.ReadLine();
                      
-                        phonebook.Add(p);
+                       // phonebook.Add(p);
                     }
                 }
             }
