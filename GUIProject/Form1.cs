@@ -39,10 +39,10 @@ namespace GUIProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach (var item in Enum.GetValues(typeof(Product)))
-            {
-                comBox.Items.Add(item.ToString());
-            }
+            //foreach (var item in Enum.GetValues(typeof(Product)))
+            //{
+            //    comBox.Items.Add(item.ToString());
+            //}
         }
          
         /// <summary>
@@ -83,7 +83,17 @@ namespace GUIProject
 
         }
 
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
 
-
+            List<Recipe> sök = new List<Recipe>();
+            var resultat1 = sök.Where(a => a.Title.ToLower().Contains(txtRecept.Text)).ToList();
+            //Loopar
+            foreach (Recipe food in resultat1)
+            {
+                txtSearch.Text += resultat1;
+               
+            }
+        }
     }
 }

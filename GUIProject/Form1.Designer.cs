@@ -64,10 +64,11 @@
             // txtSearch
             // 
             this.txtSearch.Location = new System.Drawing.Point(10, 267);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(133, 20);
             this.txtSearch.TabIndex = 43;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label2
             // 
@@ -101,7 +102,7 @@
             // 
             this.comBox.FormattingEnabled = true;
             this.comBox.Location = new System.Drawing.Point(10, 13);
-            this.comBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comBox.Margin = new System.Windows.Forms.Padding(2);
             this.comBox.Name = "comBox";
             this.comBox.Size = new System.Drawing.Size(133, 21);
             this.comBox.TabIndex = 39;
@@ -119,7 +120,7 @@
             // 
             this.listRecept.FormattingEnabled = true;
             this.listRecept.Location = new System.Drawing.Point(10, 42);
-            this.listRecept.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listRecept.Margin = new System.Windows.Forms.Padding(2);
             this.listRecept.Name = "listRecept";
             this.listRecept.Size = new System.Drawing.Size(134, 199);
             this.listRecept.TabIndex = 37;
@@ -169,7 +170,7 @@
             this.Controls.Add(this.btRemove);
             this.Controls.Add(this.btSave);
             this.Controls.Add(this.btNew);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
