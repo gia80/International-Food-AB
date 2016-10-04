@@ -28,6 +28,8 @@ namespace GUIProject
             recipes = serializer.DeserializeRecipes();
 
 
+            //Enum binding
+            comBox.DataSource = Enum.GetValues(typeof(Product));
 
         }
 
@@ -40,8 +42,7 @@ namespace GUIProject
         {
             
         }
-
-
+         
 
         private void PopulateListBox(Product product)
         {
@@ -59,5 +60,15 @@ namespace GUIProject
             } 
 
         }
+
+        private void listRecept_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Recipe r = (Recipe)listRecept.SelectedItem;
+            
+
+        }
+
+
+
     }
 }
