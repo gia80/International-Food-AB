@@ -15,7 +15,7 @@ namespace InputOuputClass
         }
 
         private void WriteProductToFile(List<Recipe> recipe)
-        { //hejehaj
+        { //hejehajtja
             try
             {
                 using (StreamWriter w = new StreamWriter(FilePath))
