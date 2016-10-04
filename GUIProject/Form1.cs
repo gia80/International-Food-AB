@@ -26,7 +26,8 @@ namespace GUIProject
             FilePath =  Environment.CurrentDirectory + @"\Databas.xml";
             serializer = new Serializer(FilePath);
             recipes = serializer.DeserializeRecipes();
-             
+
+
             comBox.DataSource = Enum.GetValues(typeof(Product));
 
         }
@@ -43,8 +44,7 @@ namespace GUIProject
             //    comBox.Items.Add(item.ToString());
             //}
         }
-
-        #region Gias Code
+         
         /// <summary>
         /// 
         /// </summary>
@@ -62,21 +62,16 @@ namespace GUIProject
                     listRecept.Items.Add(r);
                 }
 
-            }
+            } 
 
         }
 
         private void listRecept_SelectedIndexChanged(object sender, EventArgs e)
         {
             Recipe r = (Recipe)listRecept.SelectedItem;
-
+             
         }
 
-
-
-        #endregion
-
-        #region Shahin Code
         private void UpdateTextBox(Recipe r)
         {
             txtRecept.Text = r.Title;
@@ -88,15 +83,17 @@ namespace GUIProject
 
         }
 
-        private Recipe ReadFromTextBox()
+        private void txtSearch_TextChanged(object sender, EventArgs e)
         {
 
-
-            return null;
-        } 
-        #endregion
-
-
-
+            List<Recipe> sök = new List<Recipe>();
+            var resultat1 = sök.Where(a => a.Title.ToLower().Contains(txtRecept.Text)).ToList();
+            //Loopar
+            foreach (Recipe food in resultat1)
+            {
+                txtSearch.Text += resultat1;
+               
+            }
+        }
     }
 }
