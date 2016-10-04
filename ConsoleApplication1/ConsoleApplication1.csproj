@@ -50,6 +50,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InputOuputClass\InputOuputClass.csproj">
+      <Project>{684549b2-d351-47aa-a4ee-41a9e39f9a55}</Project>
+      <Name>InputOuputClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RecipeProject\RecipeProject.csproj">
+      <Project>{984a6193-73c5-42a1-b1d5-2345a548c5c1}</Project>
+      <Name>RecipeProject</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
