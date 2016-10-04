@@ -59,5 +59,15 @@ namespace GUIProject
             } 
 
         }
+
+        private void UpdateTextbox(Recipe r)
+        {
+            txtRecept.Text = r.Title;
+            txtRecept.Text = "\n";
+            txtRecept.Text = r.Product.ToString();
+            txtRecept.Text = "\n";
+            txtRecept.Text = r.Description;
+        }
+
     }
 }
