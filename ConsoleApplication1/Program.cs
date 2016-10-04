@@ -13,9 +13,8 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
 
-            string path = Environment.CurrentDirectory + @"test.xml";
-            ProductFileSystem cl = new ProductFileSystem(path);
-
+            string path = Environment.CurrentDirectory + @"\test.xml";
+            Serializer cl = new Serializer(path);
 
 
             Recipe re = new Recipe();
@@ -28,12 +27,12 @@ namespace ConsoleApplication1
             list.Add(re);
 
 
-            cl.SerializeObject(list);
+            cl.SerializeRecipes(list);
 
 
 
 
-            List<Recipe> testlist = cl.Deserialize();
+            List<Recipe> testlist = cl.DeserializeRecipes();
 
 
         }
