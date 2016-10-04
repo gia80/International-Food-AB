@@ -45,7 +45,10 @@ namespace GUIProject
             }
         }
          
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="product"></param>
         private void PopulateListBox(Product product)
         {
             //Tömmer den gamla listan
