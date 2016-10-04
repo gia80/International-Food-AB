@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecipeProject;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -63,8 +64,5 @@ namespace InputOuputClass
         }
 
     }
-
-    internal class Recipe
-    {
-    }
+ 
 }
