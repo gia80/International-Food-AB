@@ -28,7 +28,7 @@ namespace GUIProject
             recipes = serializer.DeserializeRecipes();
 
 
-           
+            comBox.DataSource = Enum.GetValues(typeof(Product));
 
         }
 
@@ -69,7 +69,17 @@ namespace GUIProject
         private void listRecept_SelectedIndexChanged(object sender, EventArgs e)
         {
             Recipe r = (Recipe)listRecept.SelectedItem;
-            
+             
+        }
+
+        private void UpdateTextBox(Recipe r)
+        {
+            txtRecept.Text = r.Title;
+            txtRecept.Text = "\n";
+            txtRecept.Text = r.Product.ToString();
+            txtRecept.Text = "\n";
+            txtRecept.Text = r.Description;
+
 
         }
 
