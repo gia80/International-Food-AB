@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Xml;
 using System.Xml.Serialization;
 
 namespace InputOuputClass
@@ -15,6 +14,7 @@ namespace InputOuputClass
         {
             FilePath = filePath;
         }
+
         private void WriteProductToFile(List<Recipe> recipe)
         { //hejehaj
             try
@@ -33,6 +33,8 @@ namespace InputOuputClass
                 throw;
             }
         }
+
+      
 
         private void ReadProductFromFile()
         {
@@ -60,8 +62,24 @@ namespace InputOuputClass
             }
         }
 
+        public void SerializeObject(List<Recipe> list)
+        {
+            var serializer = new XmlSerializer(typeof(List<Recipe>));
+            using (var stream = File.OpenWrite(FilePath))
+            {
+                serializer.Serialize(stream, list);
+            }
+        }
 
+        public List<Recipe>  Deserialize()
+        {
+            var serializer = new XmlSerializer(typeof(List<string>));
+            using (var stream = File.OpenRead(FilePath))
+            {
+                List<Recipe> other = (List<Recipe>)(serializer.Deserialize(stream));
 
+                return other;
+            }
+        }
     }
- 
 }
