@@ -26,8 +26,7 @@ namespace GUIProject
             FilePath =  Environment.CurrentDirectory + @"\Databas.xml";
             serializer = new Serializer(FilePath);
             recipes = serializer.DeserializeRecipes();
-
-
+             
             comBox.DataSource = Enum.GetValues(typeof(Product));
 
         }
@@ -39,10 +38,10 @@ namespace GUIProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            foreach (var item in Enum.GetValues(typeof(Product)))
-            {
-                comBox.Items.Add(item.ToString());
-            }
+            //foreach (var item in Enum.GetValues(typeof(Product)))
+            //{
+            //    comBox.Items.Add(item.ToString());
+            //}
         }
          
         /// <summary>
