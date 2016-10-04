@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecipeProject;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace GUIProject
 {
     public partial class Form1 : Form
     {
+
+        private List<Recipe> recipes;
+
         public Form1()
         {
             InitializeComponent();
