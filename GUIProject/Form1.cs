@@ -24,7 +24,10 @@ namespace GUIProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            foreach (var item in Enum.GetValues(typeof()))
+            {
+                comBox.Items.Add(item.ToString());
+            }
         }
     }
 }
